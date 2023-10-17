@@ -38,7 +38,7 @@ function TopAppBar() {
             <li>
               <Link href="#experience">
                 {" "}
-                <span class="material-symbols">travel_explore</span>Expirence
+                <span class="material-symbols">travel_explore</span>Experence
               </Link>
             </li>
             <hr />

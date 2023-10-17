@@ -35,15 +35,15 @@ const MockUp = [
 function Spiner() {
   const deg = 360 / MockUp.length;
   return (
-    <section className={style.circle}>
+    <div className={style.circle}>
       <div className={style.giros}>
         {MockUp.map((icon, i) => (
-          <span key={i} style={{ transform: `rotate(${deg * i}deg)` }}>
-            <Image src={icon} alt="Not Found" width={48} height={48} />
+          <span key={i}>
+            <Image src={icon} alt="Not Found" className={style.span_images} />
           </span>
         ))}
       </div>
-    </section>
+    </div>
   );
 }
 

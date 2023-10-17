@@ -1,35 +1,37 @@
-.circle {
-  display: flex;
-  position: relative;
+.giros {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 300px;
-}
-
-.giros {
-  position: absolute;
   background-color: rgba(0, 0, 0, 0.2);
-  width: 300px;
-  height: 300px;
-  animation: spin 50s linear infinite;
   border-radius: 100%;
   box-shadow: 0px -1px 53px 17px rgba(0, 0, 0, 0.2);
 }
 
 .giros span {
   padding: 1rem;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform-origin: 0 150px;
+  filter: drop-shadow(-15px 0px 10px #3f034b) drop-shadow(15px 0px 10px #420250);
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
+.span_images {
+  width: 100px;
+  height: 100px;
+}
+
+.giros span:hover {
+  transform: scale(1.15, 1.15);
+  transition: all 300ms ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .giros {
+    grid-template-columns: repeat(3, 1fr);
   }
-  100% {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 400px) {
+  .giros {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

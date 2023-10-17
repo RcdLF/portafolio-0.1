@@ -140,6 +140,8 @@
 
 .nav_menu_links.open {
   max-height: 300px;
+  filter: drop-shadow(-15px 0px 8px #3f034b) drop-shadow(15px 0px 8px #420250);
+  z-index: 10000;
 }
 
 .nav_icon.open span:first-child {
@@ -175,9 +177,10 @@
   }
   .nav_container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    top: 0%;
+    left: 0%;
     padding: 1rem;
     width: 60px;
+    height: 60px;
   }
 }
